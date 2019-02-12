@@ -1,6 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/controllers/HomeController.java:20:1: unclosed string literal[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok("Hello World!);[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/controllers/HomeController.java:20:1: ';' expected[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok("Hello World!);[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/controllers/HomeController.java:23:1: reached end of file while parsing[0m
-[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/views/index.scala.html:1:6: missing argument list for method apply in object main[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_)(_)` instead of `apply`.[0m
+[0m[[0m[31merror[0m] [0m[0m@main("Home")[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/views/index.scala.html:2:42: not found: value name[0m
+[0m[[0m[31merror[0m] [0m[0m<h1>Welcome to the Online Flea Market!, @name!</h1>[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

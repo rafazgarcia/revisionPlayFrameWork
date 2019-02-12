@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/revisionPlayFrameWork/WDD1PlayLab/conf/routes
-// @DATE:Tue Feb 12 11:44:40 GMT 2019
+// @DATE:Tue Feb 12 15:50:16 GMT 2019
 
 import play.api.mvc.Call
 
@@ -33,22 +33,34 @@ package controllers {
     }
 
   
-    // @LINE:6
-    def index(): Call = {
+    // @LINE:11
+    def onsale(): Call = {
       
-      Call("GET", _prefix)
+      Call("GET", _prefix + { _defaultPrefix } + "onsale")
+    }
+  
+    // @LINE:12
+    def aboutus(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "aboutus")
+    }
+  
+    // @LINE:6
+    def index(name:String = "visitor"): Call = {
+      
+      Call("GET", _prefix + play.core.routing.queryString(List(if(name == "visitor") None else Some(implicitly[play.api.mvc.QueryStringBindable[String]].unbind("name", name)))))
     }
   
   }
 
-  // @LINE:13
+  // @LINE:14
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:13
+    // @LINE:14
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))

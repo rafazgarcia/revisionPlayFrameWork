@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/revisionPlayFrameWork/WDD1PlayLab/conf/routes
-// @DATE:Tue Feb 12 11:44:40 GMT 2019
+// @DATE:Tue Feb 12 15:50:16 GMT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -39,19 +39,39 @@ package controllers.javascript {
     }
 
   
+    // @LINE:11
+    def onsale: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.onsale",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "onsale"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def aboutus: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.aboutus",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "aboutus"})
+        }
+      """
+    )
+  
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
+        function(name0) {
+          return _wA({method:"GET", url:"""" + _prefix + """" + _qS([(name0 == null ? null : (""" + implicitly[play.api.mvc.QueryStringBindable[String]].javascriptUnbind + """)("name", name0))])})
         }
       """
     )
   
   }
 
-  // @LINE:13
+  // @LINE:14
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -59,7 +79,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:14
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

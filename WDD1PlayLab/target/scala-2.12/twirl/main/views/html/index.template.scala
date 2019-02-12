@@ -22,33 +22,24 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
+object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
-  /*
- * This template takes a single argument, a String containing a
- * message to display.
- */
-  def apply/*5.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
+  /**/
+  def apply():play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*6.1*/("""
-"""),format.raw/*11.4*/("""
-"""),_display_(/*12.2*/main("Welcome to Play")/*12.25*/ {_display_(Seq[Any](format.raw/*12.27*/("""
-
-    """),format.raw/*17.8*/("""
-    """),_display_(/*18.6*/welcome(message, style = "java")),format.raw/*18.38*/("""
-
-""")))}),format.raw/*20.2*/("""
-"""))
+Seq[Any](_display_(/*1.2*/main("Home")),format.raw/*1.14*/("""
+"""),format.raw/*2.1*/("""<h1>Welcome to the Online Flea Market!, """),_display_(/*2.42*/name),format.raw/*2.46*/("""!</h1>
+<h3>The place where you can buy anything and sell anyting<br/> (as long as it is legal and morally ok)</h3>"""))
       }
     }
   }
 
-  def render(message:String): play.twirl.api.HtmlFormat.Appendable = apply(message)
+  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
 
-  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (message) => apply(message)
+  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
 
   def ref: this.type = this
 
@@ -57,11 +48,11 @@ Seq[Any](format.raw/*6.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Feb 12 11:44:42 GMT 2019
+                  DATE: Tue Feb 12 16:07:05 GMT 2019
                   SOURCE: /home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/views/index.scala.html
-                  HASH: 9040cdc6391df1f5c9d9a05a763073d6fd21d0f1
-                  MATRIX: 1037->95|1148->113|1176->308|1204->310|1236->333|1276->335|1309->464|1341->470|1394->502|1427->505
-                  LINES: 31->5|36->6|37->11|38->12|38->12|38->12|40->17|41->18|41->18|43->20
+                  HASH: 2b8950f145aab9436da5242a5bc612705aabe882
+                  MATRIX: 1030->1|1062->13|1090->15|1157->56|1181->60
+                  LINES: 33->1|33->1|34->2|34->2|34->2
                   -- GENERATED --
               */
           
