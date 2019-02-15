@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/revisionPlayFrameWork/WDD1PlayLab/conf/routes
-// @DATE:Tue Feb 12 15:50:16 GMT 2019
+// @DATE:Fri Feb 15 10:16:44 GMT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -39,12 +39,32 @@ package controllers.javascript {
     }
 
   
+    // @LINE:13
+    def pageone: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.pageone",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "pageone"})
+        }
+      """
+    )
+  
     // @LINE:11
     def onsale: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.onsale",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "onsale"})
+        }
+      """
+    )
+  
+    // @LINE:14
+    def pagetwo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.pagetwo",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "pagetwo"})
         }
       """
     )
@@ -63,15 +83,15 @@ package controllers.javascript {
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
-        function(name0) {
-          return _wA({method:"GET", url:"""" + _prefix + """" + _qS([(name0 == null ? null : (""" + implicitly[play.api.mvc.QueryStringBindable[String]].javascriptUnbind + """)("name", name0))])})
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )
   
   }
 
-  // @LINE:14
+  // @LINE:16
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -79,7 +99,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:14
+    // @LINE:16
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

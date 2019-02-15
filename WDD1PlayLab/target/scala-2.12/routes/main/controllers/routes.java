@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/revisionPlayFrameWork/WDD1PlayLab/conf/routes
-// @DATE:Tue Feb 12 15:50:16 GMT 2019
+// @DATE:Fri Feb 15 10:16:44 GMT 2019
 
 package controllers;
 

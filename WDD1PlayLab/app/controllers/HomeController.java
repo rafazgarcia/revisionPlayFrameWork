@@ -21,11 +21,19 @@ public class HomeController extends Controller {
     }
 
     public Result onsale(){
-        return ok(onsale.render("On sale"));
+        return ok(onsale.render());
     }
 
     public Result aboutus(){
-        return ok(aboutus.render("About us"));
+        return ok(aboutus.render());
+    }
+
+    public Result pageone(){
+        return ok(pageone.render());
+    }
+    
+    public Result pagetwo(){
+        return ok(pagetwo.render());
     }
 
 }

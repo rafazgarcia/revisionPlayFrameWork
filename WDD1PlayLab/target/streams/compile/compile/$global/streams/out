@@ -1,9 +1,3 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/views/index.scala.html:1:6: missing argument list for method apply in object main[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_)(_)` instead of `apply`.[0m
-[0m[[0m[31merror[0m] [0m[0m@main("Home")[0m
-[0m[[0m[31merror[0m] [0m[0m     ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/views/index.scala.html:2:42: not found: value name[0m
-[0m[[0m[31merror[0m] [0m[0m<h1>Welcome to the Online Flea Market!, @name!</h1>[0m
-[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/revisionPlayFrameWork/WDD1PlayLab/app/models/ItemOnSale.java:3:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class Model[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class ItemOnSale extends Model {[0m
